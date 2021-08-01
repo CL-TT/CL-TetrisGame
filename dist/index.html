@@ -1,0 +1,70 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>俄罗斯方块</title><style>html,
+    head,
+    body,
+    div {
+      margin: 0;
+      padding: 0;
+    }
+
+    #app {
+      border: 1px solid red;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+    }
+
+    .game>div,
+    .info>div {
+      border: 1px solid white;
+      box-sizing: border-box;
+    }
+
+    .game {
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    .msg-wrap {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 99;
+      opacity: 0;
+      transition: all 0.8s;
+    }
+
+    .msg-wrap>.msg-info {
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .info {
+      box-sizing: border-box;
+      border: 1px solid green;
+      /* margin-left: 30px; */
+    }
+
+    .next-square {
+      position: relative;
+    }
+
+    .source {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .game-rules {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .game-rules>div {
+      margin-bottom: 10px;
+    }</style><script defer="defer" src="bundle.js"></script></head><body><div id="app"><div class="game"><div class="msg-wrap"><div class="msg-info">游戏暂停</div></div></div><div class="info"><div class="next-square"></div><div class="source"><span>分数：</span> <span class="span-source">0</span></div><div class="game-rules"><div>操作手册</div><div>↑ 旋转</div><div>← 向左</div><div>→ 向右</div><div>↓ 向下</div><div>空格控制 开始/暂停</div></div></div></div></body></html>

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "esnext",        //模块化标准
+    "lib": ["es2016", "dom"],  //环境
+    "sourceMap": true,         //代码地图，如果js代码报错，会反映到ts中
+    "strict": true,            
+    "removeComments": true,    //移除注释
+    "esModuleInterop": true,   
+    "moduleResolution": "node",
+    // "isolatedModules": true    //强制要求每一个文件是一个模块
+  },
+
+  "include": ["./src"]
+}
